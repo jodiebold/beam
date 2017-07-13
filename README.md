@@ -8,7 +8,8 @@ Project for handling streaming data source with Apache Beam and any distributed 
 ## Use
 The following command runs Wordcount (inspired by [this example](https://beam.apache.org/get-started/wordcount-example/)) with an entry from Pubsub messages:
 ```
-mvn compile exec:java -Dexec.mainClass=fr.sfeir.beam.WordCountPubsub -Dexec.args="--topic=<topicPath> --output=counts" -Pdirect-runner
+mvn compile exec:java -Dexec.mainClass=fr.sfeir.beam.WordCountPubsub \
+-Dexec.args="--topic=<topicPath> --output=counts" -Pdirect-runner
 ```
 where `topicPath` has the following structure: `projects/<project_id>/topics/<topic_name>`
 
