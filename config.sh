@@ -1,0 +1,1 @@
+topicPath="projects/<project_id>/topics/<topic_name>"
